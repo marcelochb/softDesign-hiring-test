@@ -63,3 +63,7 @@
     2 - dentro da pasta ios: pod install;
     3 - dentro da pasta mobile: npx react-native run-ios ou run-android
   
+
+### [iOS App!](https://i.diawi.com/Hocf5K) 
+
+### [Android App!](https://i.diawi.com/E87MSK)
