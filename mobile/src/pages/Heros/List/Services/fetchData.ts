@@ -5,6 +5,7 @@ import {
   ModelOfResponseApiFromHerosCharacters,
 } from '@src/database/Models';
 import { current } from 'immer';
+import { Alert } from 'react-native';
 
 export const useHerosListFetchDataService = () => {
   const [heroes, setHeroes] = useState<ModelOfTableHeroesCharacters[]>([]);
@@ -23,12 +24,11 @@ export const useHerosListFetchDataService = () => {
             },
           },
         );
-        console.tron.log(response);
         setHeroes(response.data.data.results);
         setLoading(false);
       } catch (error) {
         setLoading(false);
-        console.tron.log(error.response);
+        Alert.alert('Falha de comunicação', error.response.data);
       }
     };
     loadData();
@@ -45,13 +45,12 @@ export const useHerosListFetchDataService = () => {
           },
         },
       );
-      console.tron.log(response.data);
       setHeroes(currentHeroes =>
         currentHeroes.concat(response.data.data.results),
       );
       setPage(currentPage => currentPage + 1);
     } catch (error) {
-      console.tron.log(error.response);
+      Alert.alert('Falha de comunicação', error.response.data);
     }
   };
 

@@ -6,6 +6,7 @@ import {
   ModelOfResponseApiFromHerosComics,
   ModelOfTableHeroesComics,
 } from '@src/database/Models';
+import { Alert } from 'react-native';
 
 export const useHerosDetailFetchDataService = () => {
   const route = useRoute<ModelOfHerosDetailPageParameters>();
@@ -18,12 +19,11 @@ export const useHerosDetailFetchDataService = () => {
         const response = await api.get<ModelOfResponseApiFromHerosComics>(
           `${route.params.hero.id}/comics`,
         );
-        console.tron.log(response);
         setComics(response.data.data.results);
         setLoading(false);
       } catch (error) {
         setLoading(false);
-        console.tron.log(error.response);
+        Alert.alert('Falha de comunicação', error.response.data);
       }
     };
     loadData();
