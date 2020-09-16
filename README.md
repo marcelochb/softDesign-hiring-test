@@ -64,6 +64,6 @@
     3 - dentro da pasta mobile: npx react-native run-ios ou run-android
   
 
-### [iOS App!](https://i.diawi.com/Hocf5K) 
+### [iOS App!](https://i.diawi.com/UFkjXx) 
 
 ### [Android App!](https://i.diawi.com/E87MSK)
