@@ -7,7 +7,7 @@ export const Loading: React.FC = () => {
   return (
     <View style={{ ...Views.containerCenter }} >
       <View >
-        <ActivityIndicator color={colors.textContrastColor} size={"large"} />
+        <ActivityIndicator color={colors.text} size={"large"} />
       </View>
     </View>
   )

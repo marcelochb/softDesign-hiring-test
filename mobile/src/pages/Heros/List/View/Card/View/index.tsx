@@ -33,7 +33,7 @@ export const CardOfHeroList: React.FC<ModelOfCardOfHeroList> = ({
 const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.elementsSecundary,
-    marginHorizontal: metrics.large,
+    // marginHorizontal: metrics.large,
     padding: metrics.base,
     marginBottom: metrics.large,
     borderRadius: metrics.radiusBase

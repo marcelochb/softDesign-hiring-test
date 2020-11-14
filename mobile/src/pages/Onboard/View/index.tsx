@@ -11,10 +11,10 @@ export const Onboard: React.FC = () => {
   const { handleController } = useOnboardController();
   return (
     <SafeAreaView style={styles.container}>
-      <ImageSoftDesign style={styles.softDesigh} />
+      {/* <ImageSoftDesign style={styles.softDesigh} /> */}
       <ImageMarvel />
-      <Text style={Texts.body}>
-        {`Hiring test para a SoftDesign!
+      {/* <Text style={Texts.body}>
+        {`Aplicativo para
     Objetivo:
         - Criar um app utilizando a
         api publica da Marvel;
@@ -22,7 +22,7 @@ export const Onboard: React.FC = () => {
         - Lista de Personagens;
         - Tela de Detalhes do Personagem;`}
       </Text>
-      <Text style={styles.signedBy}>by Marcelo Block Teixeira</Text>
+      <Text style={styles.signedBy}>by Marcelo Block Teixeira</Text> */}
       <View style={styles.button}>
         <ButtonBase
           labelOfButtonBase={'Vamos lá!'}
@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
   container: {
     ...Views.container,
     alignItems: 'center',
+    justifyContent: 'center'
   },
   softDesigh: {
     marginTop: metrics.large
